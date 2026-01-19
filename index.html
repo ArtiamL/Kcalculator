@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <script src="https://kit.fontawesome.com/7f67cc5608.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="noto-sans-regular">
+    <main>
+        <h1 class="tomorrow-regular" id="title">Kcalculator</h1>
+        <form id="measurements">
+            <div id="units">
+                <div class="unit">
+                    <input type="radio" name="units" id="metric">
+                    <label for="metric">Metric</label>
+                </div>
+                <div class="unit">
+                    <input type="radio" name="units" id="imperial">
+                    <label for="imperial">Imperial</label>
+                </div>
+            </div>
+
+            <div id="inputs">
+                <input type="number" name="weight" placeholder="Weight">
+                <input type="number" name="height" placeholder="Height">
+                <input type="number" name="age" placeholder="Age">
+            </div>
+        </form>
+
+        <table id="pal_table">
+            <tr class="tomorrow-regular">
+                <th>Activity Level</th>
+                <th>Example</th>
+                <th>Pal</th>
+            </tr>
+            <tr>
+                <td>Sedentary</td>
+                <td></td>
+                <td>&lt;1.35</td>
+            </tr>
+            <tr>
+                <td>Lightly Active</td>
+                <td></td>
+                <td>1.35-1.55</td>
+            </tr>
+            <tr>
+                <td>Moderately Active</td>
+                <td></td>
+                <td>1.55-1.75</td>
+            </tr>
+            <tr>
+                <td>Heavily Active</td>
+                <td></td>
+                <td>1.75+</td>
+            </tr>
+            <p id="bmr">Placeholder for BMR</p>
+            <p id="tdee">Placeholder for TDEE</p>
+        </table>
+    </main>
+    <p id="note">
+        <b>Note: </b>Values provided are a guidline, please consult with a professional and adjust accordingly.
+    </p>
+</body>
+
+</html>
