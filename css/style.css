@@ -90,14 +90,21 @@ a:active {
 
 main {
     height: 100vh;
+    /* min-height: 100vh; */
     width: 100%;
 
-    display: flow-root;
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     padding: 1rem;
+}
+
+main>* {
+    flex-shrink: 0;
+    /* TODO: Determine if needed for final layout */
+    /* flex-grow: 1; */
 }
 
 input {
@@ -133,6 +140,7 @@ input {
     padding: 0.75rem 1rem;
 
     color: var(--input-contrast);
+    background-color: var(--porcelain);
 
     border: none;
     border-radius: 0.75rem;
@@ -155,13 +163,14 @@ input:focus {
 }
 
 #title {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     margin-bottom: 2rem;
 }
 
 form#measurements {
     /* height: 30%; */
     width: 100%;
+    max-width: 43.5rem;
 
     display: flex;
     flex-direction: column;
