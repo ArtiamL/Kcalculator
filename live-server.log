@@ -1,0 +1,152 @@
+nohup: ignoring input
+[32mServing "/home/artiaml/dev/websites/kcalculator" at http://127.0.0.1:8080[39m
+[36mReady for changes[39m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 4.215 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/index.html
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 1.077 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[35mCSS change detected[39m /home/artiaml/dev/websites/kcalculator/css/style.css
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.572 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[35mCSS change detected[39m /home/artiaml/dev/websites/kcalculator/css/style.css
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 1.337 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 2.570 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 1.650 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 2.994 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 2.676 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 2.319 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.919 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 1.706 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.663 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 1.558 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.874 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 1.023 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.671 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 0.968 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.641 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 0.941 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.852 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 1.188 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.643 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 1.015 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.589 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 1.906 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.610 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 1.565 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.656 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 2.101 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.700 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 2.183 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.480 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 1.975 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.645 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 1.070 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 1.472 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 2.578 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 2.953 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 0.981 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.853 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 1.980 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.656 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 1.285 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.532 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 1.634 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.592 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 8.284 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.556 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 1.930 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.701 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 0.981 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.551 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 2.399 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.490 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 0.988 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.856 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 1.630 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.734 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 3.409 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 4.364 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 2.783 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.471 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 2.729 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.631 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 1.167 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.535 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 2.598 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.524 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 2.901 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /scripts/index.js [33m404[0m 0.566 ms - 155[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log
+[0mGET /favicon.ico [33m404[0m 1.032 ms - 150[0m
+[36mChange detected[39m /home/artiaml/dev/websites/kcalculator/live-server.log

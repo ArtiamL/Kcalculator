@@ -8,7 +8,7 @@
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <script type="text/javascript" src="scripts/index.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
     <script src="https://kit.fontawesome.com/7f67cc5608.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,12 +19,12 @@
 </head>
 
 <body class="noto-sans-regular">
+    <h1 class="tomorrow-regular" id="title">Kcalculator</h1>
     <main>
-        <h1 class="tomorrow-regular" id="title">Kcalculator</h1>
         <form id="measurements">
             <div id="units">
                 <div class="unit">
-                    <input type="radio" name="units" id="metric">
+                    <input type="radio" name="units" id="metric" checked>
                     <label for="metric">Metric</label>
                 </div>
                 <div class="unit">
@@ -37,14 +37,26 @@
                 <input type="number" name="weight" placeholder="Weight">
                 <input type="number" name="height" placeholder="Height">
                 <input type="number" name="age" placeholder="Age">
+                <input type="number" name="pal" placeholder="PAL">
+                <button class="submit">Calculate</button>
             </div>
+
+
+            <h4 class="noto-sans-regular" id="bmr-label">
+                BMR:&emsp;<b class="tomorrow-bold" id="bmr">0</b>&nbsp;kcal
+            </h4>
+            <h4 class="noto-sans-regular" id="tdee-label">
+                TDEE:&emsp;<b class="tomorrow-bold" id="tdee">0</b>&nbsp;kcal
+            </h4>
         </form>
 
-        <table id="pal_table">
+        <!-- TODO: Insert SVG donut chart -->
+
+        <table id="pal-table">
             <tr class="tomorrow-regular">
                 <th>Activity Level</th>
                 <th>Example</th>
-                <th>Pal</th>
+                <th>PAL</th>
             </tr>
             <tr>
                 <td>Sedentary</td>
@@ -66,12 +78,10 @@
                 <td></td>
                 <td>1.75+</td>
             </tr>
-            <p id="bmr">Placeholder for BMR</p>
-            <p id="tdee">Placeholder for TDEE</p>
         </table>
     </main>
     <p id="note">
-        <b>Note: </b>Values provided are a guidline, please consult with a professional and adjust accordingly.
+        <b>Note: </b>Values provided are a guidline, consult with your Doctor before starting a new diet.
     </p>
 </body>
 
