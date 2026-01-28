@@ -8,9 +8,11 @@
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="module" src="scripts/main.js" defer></script>
     <script src="https://kit.fontawesome.com/7f67cc5608.js" crossorigin="anonymous"></script>
 
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127822;</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,66 +21,81 @@
 </head>
 
 <body class="noto-sans-regular">
-    <h1 class="tomorrow-regular" id="title">Kcalculator</h1>
     <main>
+        <h1 class="tomorrow-regular" id="title">Kcalculator</h1>
         <form id="measurements">
-            <div id="units">
+            <div id="units" class="radio-buttons">
                 <div class="unit">
-                    <input type="radio" name="units" id="metric" checked>
+                    <input type="radio" name="units" id="metric" value="metric" checked>
                     <label for="metric">Metric</label>
                 </div>
                 <div class="unit">
-                    <input type="radio" name="units" id="imperial">
+                    <input type="radio" name="units" id="imperial" value="imperial">
                     <label for="imperial">Imperial</label>
                 </div>
             </div>
 
             <div id="inputs">
-                <input type="number" name="weight" placeholder="Weight">
-                <input type="number" name="height" placeholder="Height">
+                <input type="number" name="weight" placeholder="Weight" step="0.01" id="weight">
+                <input type="number" name="height" placeholder="Height" step="0.01" id="height">
                 <input type="number" name="age" placeholder="Age">
-                <input type="number" name="pal" placeholder="PAL">
-                <button class="submit">Calculate</button>
+                <input type="number" name="pal" placeholder="PAL" step="0.01">
+                <div id="gender-select" class="radio-buttons">
+                    <div class="gender">
+                        <input type="radio" name="gender" id="male" value="male" checked>
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="imperial">Female</label>
+                    </div>
+                </div>
+                <button id="submit">Calculate</button>
             </div>
 
-
             <h4 class="noto-sans-regular" id="bmr-label">
-                BMR:&emsp;<b class="tomorrow-bold" id="bmr">0</b>&nbsp;kcal
+                BMR:&emsp;<b class="tomorrow-bold" id="bmr-output">0</b>&nbsp;kcal
             </h4>
             <h4 class="noto-sans-regular" id="tdee-label">
-                TDEE:&emsp;<b class="tomorrow-bold" id="tdee">0</b>&nbsp;kcal
+                TDEE:&emsp;<b class="tomorrow-bold" id="tdee-output">0</b>&nbsp;kcal
             </h4>
         </form>
-
-        <!-- TODO: Insert SVG donut chart -->
 
         <table id="pal-table">
             <tr class="tomorrow-regular">
                 <th>Activity Level</th>
-                <th>Example</th>
+                <!-- <th>Example</th> -->
                 <th>PAL</th>
             </tr>
             <tr>
                 <td>Sedentary</td>
-                <td></td>
+                <!-- <td></td> -->
                 <td>&lt;1.35</td>
             </tr>
             <tr>
                 <td>Lightly Active</td>
-                <td></td>
+                <!-- <td></td> -->
                 <td>1.35-1.55</td>
             </tr>
             <tr>
                 <td>Moderately Active</td>
-                <td></td>
+                <!-- <td></td> -->
                 <td>1.55-1.75</td>
             </tr>
             <tr>
                 <td>Heavily Active</td>
-                <td></td>
+                <!-- <td></td> -->
                 <td>1.75+</td>
             </tr>
         </table>
+
+        <!-- TODO: Insert SVG donut chart -->
+
+        <div id="sliders">
+            <input type="range" min="1" max="100" value="33" name="protein-slider" id="protein" class="slider">
+            <input type="range" min="1" max="100" value="33" name="carbs-slider" id="carbs" class="slider">
+            <input type="range" min="1" max="100" value="33" name="fat-slider" id="fat" class="slider">
+        </div>
     </main>
     <p id="note">
         <b>Note: </b>Values provided are a guidline, consult with your Doctor before starting a new diet.
