@@ -31,6 +31,10 @@ body,
     --prussian-blue: #112a46;
 
     --input-contrast: #5f6c8f;
+
+    --macro-green: #6fa86f;
+    --macro-red: #d77a7a;
+    --macro-blue: #7aaed7;
 }
 
 * {
@@ -263,6 +267,21 @@ footer {
     margin-right: 2rem;
 
     /* text-align: justify; */
+}
+
+#carb-arc {
+    fill: var(--macro-blue);
+    stroke: var(--macro-blue);
+}
+
+#fat-arc {
+    fill: var(--macro-red);
+    stroke: var(--macro-red);
+}
+
+#protein-arc {
+    fill: var(--macro-green);
+    stroke: var(--macro-green);
 }
 
 #sliders {

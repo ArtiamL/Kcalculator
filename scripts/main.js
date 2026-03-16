@@ -1,5 +1,6 @@
 import { lbToKG, ftToCm } from "./modules/conversion.mjs";
 import { mifflinStJeor, katchMcArdle, tdeeCalc } from "./modules/bmr_calculations.mjs";
+import { getArcPaths, getArcCoords } from "./modules/chart.mjs";
 
 const form = document.getElementById("measurements");
 const bmrOutput = document.getElementById("bmr-output");
@@ -58,3 +59,7 @@ form.addEventListener("submit", e => {
     bmrOutput.innerHTML = bmr;
     tdeeOutput.innerHTML = tdee;
 });
+
+const pathAngles = getArcPaths();
+console.log(pathAngles);
+console.log(getArcCoords(pathAngles));
