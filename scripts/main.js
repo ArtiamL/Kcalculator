@@ -1,6 +1,6 @@
 import { lbToKG, ftToCm } from "./modules/conversion.mjs";
 import { mifflinStJeor, katchMcArdle, tdeeCalc } from "./modules/bmr_calculations.mjs";
-import { getArcPaths, getArcCoords } from "./modules/chart.mjs";
+import { getArcPaths, getArcCoords, plotArcs } from "./modules/chart.mjs";
 
 const form = document.getElementById("measurements");
 const bmrOutput = document.getElementById("bmr-output");
@@ -12,6 +12,8 @@ const heightInput = document.getElementById("height");
 
 // If browser changes initial checked radio, this can allow to see which is checked and update placeholder text.
 const initialCheckedRadio = document.querySelector("input[name='units']:checked");
+
+const macroChart = document.getElementById("macroChart");
 
 const unitMap = {
     metric: {
@@ -60,6 +62,5 @@ form.addEventListener("submit", e => {
     tdeeOutput.innerHTML = tdee;
 });
 
-const pathAngles = getArcPaths();
-console.log(pathAngles);
-console.log(getArcCoords(pathAngles));
+const pathCoords = getArcCoords(getArcPaths());
+plotArcs(macroChart, pathCoords);
