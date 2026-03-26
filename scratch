@@ -1,0 +1,22 @@
+{
+  "outerStartAngle": 87,
+  "outerEndAngle": -27,
+  "innerStartAngle": 61.125,
+  "innerEndAngle": -1.125,
+  "outerStart": {
+    "x": 210,
+    "y": 8
+  },
+  "outerEnd": {
+    "x": 372,
+    "y": 287
+  },
+  "innerStart": {
+    "x": 210,
+    "y": 182
+  },
+  "innerEnd": {
+    "x": 220,
+    "y": 200
+  }
+}

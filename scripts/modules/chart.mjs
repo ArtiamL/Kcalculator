@@ -1,5 +1,18 @@
 
 const svgNS = "http://www.w3.org/2000/svg";
+const circleSize = 360;
+
+export function getSliceLen(numSlices) {
+    return circleSize / numSlices;
+}
+
+export function getSliceCentres(startOffset, sliceLen, sliceNames) {
+    const firstCentre = startOffset - sliceLen / 2;
+
+    return Object.fromEntries(
+        sliceNames.map((k, i) => [k, firstCentre + (i * sliceLen)])
+    );
+}
 
 // Converts polar coords to cartesian
 function polarToCartesian(cx, cy, r, angleDeg) {
@@ -30,15 +43,15 @@ export function getArcPaths(centres, properties) {
         Object.entries(centres).map(([name, centreAngle]) => {
             const outer = getArcAngles(
                 centreAngle,
-                properties.sliceAngle.len,
-                properties.sliceAngle.offset
+                properties.sliceLen,
+                properties.gapPerSide
             );
 
             const inner = getArcAngles(
                 centreAngle,
-                properties.sliceAngle.len,
+                properties.sliceLen,
                 getInnerOffset(
-                    properties.sliceAngle.offset,
+                    properties.gapPerSide,
                     properties.radius.outer,
                     properties.radius.inner
                 )
