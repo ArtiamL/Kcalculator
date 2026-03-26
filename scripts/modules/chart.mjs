@@ -1,17 +1,5 @@
-// Centre angles for each slice
-const sliceCentres = {
-    carb: 30,
-    fat: 270,
-    protein: 150
-};
 
-// Properties for all slices
-const sliceProps = {
-    cx: 200,
-    cy: 200,
-    radius: { inner: 20, outer: 192.5 },
-    sliceAngle: { len: 120, offset: 3 },
-};
+const svgNS = "http://www.w3.org/2000/svg";
 
 // Converts polar coords to cartesian
 function polarToCartesian(cx, cy, r, angleDeg) {
@@ -37,28 +25,26 @@ function getInnerOffset(outer_offset, r_outer, r_inner) {
 }
 
 // Creates an object holding the start and end paths for each arc
-export function getArcPaths() {
+export function getArcPaths(centres, properties) {
     return Object.fromEntries(
-        Object.entries(sliceCentres).map(([name, centreAngle]) => {
+        Object.entries(centres).map(([name, centreAngle]) => {
             const outer = getArcAngles(
                 centreAngle,
-                sliceProps.sliceAngle.len,
-                sliceProps.sliceAngle.offset
+                properties.sliceAngle.len,
+                properties.sliceAngle.offset
             );
 
             const inner = getArcAngles(
                 centreAngle,
-                sliceProps.sliceAngle.len,
+                properties.sliceAngle.len,
                 getInnerOffset(
-                    sliceProps.sliceAngle.offset,
-                    sliceProps.radius.outer,
-                    sliceProps.radius.inner
+                    properties.sliceAngle.offset,
+                    properties.radius.outer,
+                    properties.radius.inner
                 )
             );
 
             return [name, {
-                centreAngle,
-
                 outerStartAngle: outer.start,
                 outerEndAngle: outer.end,
 
@@ -70,7 +56,7 @@ export function getArcPaths() {
 }
 
 // Appends the cartesian coords for the start and end points of each arc to the given dict
-export function getArcCoords(paths) {
+export function getArcCoords(paths, properties) {
     const {
         cx: cx,
         cy: cy,
@@ -78,7 +64,7 @@ export function getArcCoords(paths) {
             inner: rInner,
             outer: rOuter
         }
-    } = sliceProps;
+    } = properties;
 
     Object.values(paths).forEach(path => {
         path.outerStart = polarToCartesian(cx, cy, rOuter, path.outerStartAngle);
@@ -91,19 +77,10 @@ export function getArcCoords(paths) {
 }
 
 // Creates and draws the paths for each arc using the given svg element and a dict of the path coords
-export function plotArcs(svg, paths) {
-    const svgNS = "http://www.w3.org/2000/svg";
-
-    // for (let i = 0; i < Object.keys(paths).length; i + 2) {
-    //     const path = document.createElementNS(svgNS, "path");
-    //     // path.setAttribute("d", "M " + points.)
-    // }
+export function plotArcs(svg, paths, properties) {
+    const { inner: rInner, outer: rOuter } = properties.radius;
 
     Object.entries(paths).forEach(([name, path]) => {
-        const { inner: rInner, outer: rOuter } = sliceProps.radius;
-
-        // const aPath = `${cx} ${cy} 0 0`;
-
         const pathElem = document.createElementNS(svgNS, "path");
 
         pathElem.setAttribute(
@@ -119,5 +96,24 @@ export function plotArcs(svg, paths) {
         pathElem.setAttribute("id", `${name}-arc`);
 
         svg.appendChild(pathElem);
+    });
+
+    console.log(paths);
+}
+
+export function drawHandle(svg, outerEndCoords) {
+    console.log(outerEndCoords);
+
+    Object.entries(outerEndCoords).forEach(([name, coord]) => {
+        console.log(coord);
+        const handle = document.createElementNS(svgNS, "circle");
+
+        handle.setAttribute("cx", coord.x);
+        handle.setAttribute("cy", coord.y);
+        handle.setAttribute("id", `${name}-handle`);
+        handle.setAttribute("class", "slice-handles");
+
+        console.log(handle)
+        svg.appendChild(handle);
     });
 }

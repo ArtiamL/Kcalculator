@@ -1,6 +1,7 @@
 import { lbToKG, ftToCm } from "./modules/conversion.mjs";
 import { mifflinStJeor, katchMcArdle, tdeeCalc } from "./modules/bmr_calculations.mjs";
-import { getArcPaths, getArcCoords, plotArcs } from "./modules/chart.mjs";
+import { getArcPaths, getArcCoords, plotArcs, drawHandle } from "./modules/chart.mjs";
+import { sliceCentres, sliceProps } from "./config/properties.mjs";
 
 const form = document.getElementById("measurements");
 const bmrOutput = document.getElementById("bmr-output");
@@ -62,5 +63,15 @@ form.addEventListener("submit", e => {
     tdeeOutput.innerHTML = tdee;
 });
 
-const pathCoords = getArcCoords(getArcPaths());
-plotArcs(macroChart, pathCoords);
+const paths = getArcPaths(sliceCentres, sliceProps);
+const pathCoords = getArcCoords(paths, sliceProps);
+plotArcs(macroChart, pathCoords, sliceProps);
+drawHandle(
+    macroChart,
+    Object.fromEntries(
+        Object.entries(pathCoords).map(([k, v]) => [
+            k,
+            v.outerEnd
+        ])
+    )
+);
