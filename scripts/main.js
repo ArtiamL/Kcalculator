@@ -66,19 +66,11 @@ form.addEventListener("submit", e => {
 });
 
 sliceProperties.sliceLen = getSliceLen(sliceProperties.names.length);
-
-const sliceCentres = getSliceCentres(sliceProperties.startDeg, sliceProperties.sliceLen, sliceProperties.names);
 console.log(sliceProperties);
 
+const sliceCentres = getSliceCentres(sliceProperties.startDeg, sliceProperties.sliceLen, sliceProperties.names);
 const paths = getArcPaths(sliceCentres, sliceProperties);
 const pathCoords = getArcCoords(paths, sliceProperties);
 plotArcs(macroChart, pathCoords, sliceProperties);
-drawHandle(
-    macroChart,
-    Object.fromEntries(
-        Object.entries(pathCoords).map(([k, v]) => [
-            k,
-            v.outerEnd
-        ])
-    )
-);
+console.log(pathCoords);
+drawHandle(macroChart, sliceProperties);

@@ -18,6 +18,8 @@ export function getSliceCentres(startOffset, sliceLen, sliceNames) {
 function polarToCartesian(cx, cy, r, angleDeg) {
     const angleRad = angleDeg * Math.PI / 180
 
+    console.log(`${cx} ${cy} ${r} ${angleDeg}`);
+
     return {
         x: Math.round(cx + r * Math.cos(angleRad)),
         y: Math.round(cy - r * Math.sin(angleRad))
@@ -110,23 +112,24 @@ export function plotArcs(svg, paths, properties) {
 
         svg.appendChild(pathElem);
     });
-
-    console.log(paths);
 }
 
-export function drawHandle(svg, outerEndCoords) {
-    console.log(outerEndCoords);
+// Draws a handle between each slice for interactivity
+export function drawHandle(svg, properties) {
+    console.log(properties);
+    properties.names.forEach((n, i) => {
+        const { x: startX, y: startY } = polarToCartesian(properties.cx, properties.cy, properties.radius.inner, properties.startDeg + (i * properties.sliceLen));
+        const { x: endX, y: endY } = polarToCartesian(properties.cx, properties.cy, properties.radius.outer, properties.startDeg + (i * properties.sliceLen));
+        const handle = document.createElementNS(svgNS, "path");
 
-    Object.entries(outerEndCoords).forEach(([name, coord]) => {
-        console.log(coord);
-        const handle = document.createElementNS(svgNS, "circle");
-
-        handle.setAttribute("cx", coord.x);
-        handle.setAttribute("cy", coord.y);
-        handle.setAttribute("id", `${name}-handle`);
+        handle.setAttribute(
+            "d",
+            `M ${startX} ${startY}
+            L ${endX} ${endY}`
+        );
+        handle.setAttribute("id", `${n}-handle`);
         handle.setAttribute("class", "slice-handles");
 
-        console.log(handle)
         svg.appendChild(handle);
     });
 }

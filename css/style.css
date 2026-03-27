@@ -288,6 +288,12 @@ footer {
     margin-top: 2rem;
 }
 
+.slice-handles {
+    stroke: var(--space-cadet);
+    stroke-width: 3;
+    stroke-dasharray: 3, 5;
+}
+
 @media (min-width: 32rem) {
     #inputs {
         /* width: 100%; */
